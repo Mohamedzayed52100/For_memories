@@ -1,5 +1,12 @@
 <?php
 
+
+/*
+final keyword في الواثة تمنع الفانشكن من ال override
+
+
+final class ال class مش هيحصله وراثة لكن اقدر اعمل منه اوبجيكت 
+*/
  
 class First{
     public function Get(){

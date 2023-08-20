@@ -1,5 +1,8 @@
 <?php
 
+
+//DRY don't repeat yourself
+
 class Person{
     protected string $name;
     protected int  $age;
