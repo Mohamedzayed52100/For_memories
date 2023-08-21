@@ -13,6 +13,11 @@ echo '<br>';
 
 ////change dataType  to another 
 
+/*
+نغير الداتا تيب الي داتا تيب اخري
+
+*/
+
 ///serialize() convert any dataType to string 
 
 
@@ -55,6 +60,11 @@ $user1->setAge(22);
 echo $user1->getAge();
 echo '<br>';
 echo '<br>';
+
+
+
+///convert to string 
+//للتخزين في الداتا بيز 
 
 $ser= serialize($user1);
 

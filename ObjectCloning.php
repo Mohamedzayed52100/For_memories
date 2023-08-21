@@ -23,7 +23,10 @@ class User{
 
 $user1 =new User();
 
-$user2= &$user1;
+
+$user3 =$user1;//shallow copy 
+
+$user2= &$user1;///////////////////////////////////////////////////////////////////
 
 
 var_dump($user1);
