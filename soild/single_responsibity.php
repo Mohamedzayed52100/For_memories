@@ -14,5 +14,7 @@ class doctor , patient
 
 سهل اني اقسم المسروع 
 
+لكل فانشكن Class 
+
 
 */
