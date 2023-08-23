@@ -1,7 +1,10 @@
 <?php
 
 
+/*
+abstraction is implentation by abstract class and interface
 
+*/
 
 ///abstraction
 
