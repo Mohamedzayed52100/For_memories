@@ -26,18 +26,30 @@ function Testing() {
 
 }
 
-$newObj = Testing();
+/*
 
-$newObj->current();
-$newObj->next();
-$newObj->current();
-$newObj->next();
-$newObj->current();
+معاملة معاها زي المعاملة مع الاوبجيكت 
+
+*/
+$newObj = Testing();
+echo '<br>';
+echo '<br>';
+echo $newObj->current();
+echo '<br>';
+echo $newObj->next();
+echo '<br>';
+echo $newObj->current();
+echo '<br>';
+echo $newObj->next();
+echo '<br>';
+echo $newObj->current();
+echo '<br>';
 
 
 echo '<br><br><br>******************************<br><br><br>';
-foreach (range(1, 50 ,5) as $key => $value) {
-    echo $key. ' ';
+foreach (range(1, 50 ) as $key => $value) {
+     echo "key is = ".$key ." and the value is ".$value .'<br>';
+
     
 }
 echo '<br><br><br>******************************<br><br><br>';

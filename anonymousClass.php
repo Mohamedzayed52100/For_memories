@@ -40,3 +40,38 @@ public function sayHello(){
 $newClass->setData('mohamed' ,22);
 echo $newClass->getData();
 echo $newClass->sayHello();
+
+
+
+$tes = new class {
+
+    private int $id ;
+    private ?string $name;
+
+
+    public function setData(int $id   , ?string $name){
+        $this->name =$name;
+        $this->id =$id;
+    }
+
+
+    public function getName(){
+        return $this->name;
+    }
+    public function getId(){
+        return $this->id;
+    }
+
+};
+
+
+
+
+
+echo '<br>';
+$tes->setData(15 , "ahmed");
+echo $tes->getId();
+echo '<br>';
+echo '<br>';
+echo $tes->getName();
+echo '<br>';
