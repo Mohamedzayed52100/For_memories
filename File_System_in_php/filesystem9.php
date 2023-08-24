@@ -39,19 +39,25 @@ rename("Old/D.txt", "Old/NEN.txt");
 // Rename => Other Place => "Cut" || "Move"
 
 if(file_exists("Old/Testing.txt"))
-rename("Old/Testing.txt", "New/Testing_2.txt");
+rename("Old/Testing.txt", "New/Testing_2.txt");/**
+عملت فولدر جديد اسمه new 
+
+*/
 
 // Move To Other Place
 // rename("Old/Elzero.pptx", "New/Elzero.pptx");
 
 // Copy Without Rename
-// copy("Old/Info.docx", "New/info.docx");
+
+if(file_exists("Old/Info.docx"))
+copy("Old/Info.docx", "New/info.docx");
 
 // Copy With Rename
 // copy("Old/Work.txt", "New/working.txt");
 
 
 
+if(file_exists("Old/Work.rtf"))
 
 unlink("Old/Work.rtf");
 //delete
