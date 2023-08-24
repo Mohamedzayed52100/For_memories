@@ -23,6 +23,12 @@
 
 echo "<pre>";
 print_r(glob("Old/*.*"));
+
+/**
+ عملت فولدر Old
+ معني ال function حات المتدادات بتاعت الملفات اللي في هذا الملف او المجلد
+ 
+ */
 echo "</pre>";
 
 // Rename => Same Place
