@@ -8,8 +8,29 @@
 using yield 
 
 
+بيحصلة implements من ا لinterface دي 
+
+generator iterator traversable 
+
+
+
+
+
+memory_get_peak_usage  بتجيب استهلاك الميموري قد اي 
+ولو استحدمت ال generator هيبقي استهلاك الميميوي بصفر
+
+
+
+
+
+
+
+
 
 */
+
+
+$inital=memory_get_peak_usage(true);
 
 
 function Testing() {
@@ -58,3 +79,44 @@ echo '<br><br><br>******************************<br><br><br>';
 
 $arr= range(1, 50 ,5);
 var_dump($arr);
+
+
+echo '<br><br><br>******************************<br><br><br>';
+
+
+ function generator($mx =15){
+    $arr=[];
+for($i = 0 ; $i < $mx ; $i++) {
+    $arr[] = $i + 1;
+}
+return $arr;
+    
+ }
+ var_dump((generator()));
+
+ echo '<br><br><br>******************************<br><br><br>';
+
+
+ function generator2($mx =15){
+     
+for($i = 0 ; $i < $mx ; $i++) {
+    yield $i;
+
+}
+     
+ }
+
+ $gen = generator2(10);
+
+var_dump($gen->current());
+$gen->next();
+var_dump($gen->current());
+
+
+// foreach($gen as $item){var_dump($item);}
+
+
+
+echo memory_get_peak_usage(true) -$inital;
+
+
