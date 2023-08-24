@@ -120,3 +120,14 @@ var_dump($gen->current());
 echo memory_get_peak_usage(true) -$inital;
 
 
+
+
+
+function buildJson($rows)
+{
+    yield '[';
+    foreach($rows as $row){
+        yield json_encode([$row]);
+    }
+    yield ']';
+}
