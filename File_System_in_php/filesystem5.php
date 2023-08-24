@@ -22,6 +22,14 @@
 
   $handle = fopen("elzero.txt", "r");
 
+
+  /**
+   r for reading 
+   r+ for reading and writing 
+   w for write and create the file if not exists 
+   w+ for read and  write and create the file if not exists 
+   */
+
   // echo fgets($handle, 4);
 
   echo fread($handle, 1024);
