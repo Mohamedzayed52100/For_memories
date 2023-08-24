@@ -34,4 +34,6 @@
 
   echo fread($handle, 1024);
 
-  fclose($handle);
+  fclose($handle); //قفل الملف 
+
+  
