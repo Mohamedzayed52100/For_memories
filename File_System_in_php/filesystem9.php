@@ -27,15 +27,19 @@ print_r(glob("Old/*.*"));
 /**
  عملت فولدر Old
  معني ال function حات المتدادات بتاعت الملفات اللي في هذا الملف او المجلد
- 
+
  */
 echo "</pre>";
 
 // Rename => Same Place
-// rename("Old/Test.txt", "Old/Testing.txt");
+if(file_exists("Old/D.txt"))
+rename("Old/D.txt", "Old/NEN.txt");
+
 
 // Rename => Other Place => "Cut" || "Move"
-// rename("Old/Testing.txt", "New/Testing_2.txt");
+
+if(file_exists("Old/Testing.txt"))
+rename("Old/Testing.txt", "New/Testing_2.txt");
 
 // Move To Other Place
 // rename("Old/Elzero.pptx", "New/Elzero.pptx");
