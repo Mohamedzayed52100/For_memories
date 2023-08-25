@@ -10,17 +10,21 @@
 
   date_default_timezone_set("Africa/Cairo");
 
-  $reg = date_create("2022-01-09");
+  $reg = date_create("2020-01-09");
   $now = date_create("now");
 
-  $diff = date_diff($reg, $now);
+  $diff = date_diff($reg, $now);/**
+  الفرق بين تاريخين 
+  */
 
   echo '<pre>';
   print_r($diff);
   echo '</pre>';
 
+ 
   echo "You Are A Member For " . $diff->days . " Days<br>";
-
+  echo "You Are A Member For " . $diff->m. " month<br>";
+echo "<br>****************************************************<br>";
   echo date("Y-m-d H:i:s", strtotime("next Friday")) . "<br>";
   echo date("Y-m-d H:i:s", strtotime("+1 year")) . "<br>";
   echo date("Y-m-d H:i:s", strtotime("tomorrow")) . "<br>";
