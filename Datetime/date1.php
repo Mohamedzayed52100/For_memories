@@ -22,7 +22,13 @@
 
   */
 
+
   // Get Timezone
+
+  /**
+   ال timesone دي حاحة جغرافية كل بلد او منطقة ليها timezone خاص بيها مرتبط مع خطوط الطول 
+
+   */
 
   echo date_default_timezone_get() . "<br>";
 
@@ -30,9 +36,16 @@
 
   echo date("Y-m-d H:i:s") . "<br>";
 
+  //year month day hour minite second 
+
   // Change Timezone
 
   date_default_timezone_set("Africa/Cairo");
+
+  /**
+   تغير ال timezone الي القاهرة علشان اجيب التاريخ والساعة بتاع القاهرة 
+
+   */
 
   // Print Date And Time Again
 
@@ -50,8 +63,17 @@
 
   echo date_format($d, "Y-m-d H:i:s");
 
+  /**
+   علشان لو عايز اعرف معاد الساعة والتاريخ عند مكان معيد مثلا هنا عند الهند
+   */
+
   // Check Date
 
+
+  /**
+   تتأكد من صلاحية التاريخ 
+
+   */
   echo "<br>";
   var_dump(checkdate(10, 25, 1982));
   echo "<br>";
