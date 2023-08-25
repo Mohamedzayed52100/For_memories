@@ -26,7 +26,7 @@ print_r(glob("Old/*.*"));
 
 /**
  عملت فولدر Old
- معني ال function حات المتدادات بتاعت الملفات اللي في هذا الملف او المجلد
+ معني ال function حات الامتدادات بتاعت الملفات اللي في هذا الملف او المجلد
 
  */
 echo "</pre>";
@@ -58,6 +58,5 @@ copy("Old/Info.docx", "New/info.docx");
 
 
 if(file_exists("Old/Work.rtf"))
-
 unlink("Old/Work.rtf");
 //delete
